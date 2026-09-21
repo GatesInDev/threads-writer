@@ -6,4 +6,8 @@ set(CMAKE_C_STANDARD 90)
 add_executable(Writer src/main.c
         include/plataform.h
         plataform/linux/process.c
-        plataform/windows/process.c)
+        plataform/windows/process.c
+        plataform/linux/threads.c
+        plataform/linux/mutex.c
+        plataform/windows/threads.c
+        plataform/windows/mutex.c)
